@@ -1,12 +1,38 @@
-{
-  "welcome": "Welcome to Calculator!",
-  "first_number": "What is the first number?",
-  "second_number": "What is the second numbner?",
-  "invalid_number": "Hmm... that doesn't look like a valid number.",
-  "operation_prompt": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
-  "invalid_operation": "You must choose 1, 2, 3, or 4",
-  "result": "The result is ",
-  "repeat_prompt": "Would you like to make a new calculation? (y/n)",
-  "invalid_repeat": "Please input 'y' or 'n'"
-
+{ 
+    "en":{
+        "welcome": "Welcome to Calculator!",
+        "lang_prompt": "Please choose a language by typing language code\n==> en/es/nl",
+        "invalid lang": "Please select a valid language!\nen/es/nl",
+        "first_number": "What is the first number?",
+        "second_number": "What is the second numbner?",
+        "invalid_number": "Hmm... that doesn't look like a valid number.",
+        "operation_prompt": "What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+        "invalid_operation": "You must choose 1, 2, 3, or 4",
+        "result": "The result is ",
+        "repeat_prompt": "Would you like to make a new calculation? (y/n)",
+        "invalid_repeat": "Please input 'y' or 'n'"
+    
+    },
+    "es":{
+        "welcome": "SPAIN Welcome to Calculator!",
+        "first_number": "SPAIN What is the first number?",
+        "second_number": "SPAIN What is the second numbner?",
+        "invalid_number": "SPAIN Hmm... that doesn't look like a valid number.",
+        "operation_prompt": "SPAIN What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+        "invalid_operation": "SPAIN You must choose 1, 2, 3, or 4",
+        "result": "SPAIN The result is ",
+        "repeat_prompt": "SPAIN Would you like to make a new calculation? (y/n)",
+        "invalid_repeat": "SPAIN Please input 'y' or 'n'"
+    },
+    "nl":{
+        "welcome": "NL Welcome to Calculator!",
+        "first_number": "NL What is the first number?",
+        "second_number": "NL What is the second numbner?",
+        "invalid_number": "NL Hmm... that doesn't look like a valid number.",
+        "operation_prompt": "NL What operation would you like to perform?\n1) Add 2) Subtract 3) Multiply 4) Divide",
+        "invalid_operation": "NL You must choose 1, 2, 3, or 4",
+        "result": "NL The result is ",
+        "repeat_prompt": "NL Would you like to make a new calculation? (y/n)",
+        "invalid_repeat": "NL Please input 'y' or 'n'"
+    }    
 }

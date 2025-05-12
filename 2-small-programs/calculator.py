@@ -1,10 +1,5 @@
 import json
 
-with open('calculator_messages.json', 'r') as file:
-    MESSAGES= json.load(file)
-
-
-
 def prompt(message):
     print(f"==> {message}")
 
@@ -16,7 +11,24 @@ def invalid_number(number_str):
 
     return False
 
-prompt(MESSAGES['welcome'])
+with open('calculator_messages.json', 'r') as file:
+    MESSAGES_INIT= json.load(file)
+
+
+
+
+
+prompt(MESSAGES_INIT['en']['welcome'])
+
+prompt(MESSAGES_INIT['en']['lang_prompt'])
+
+lang = input()
+
+while lang not in ['en', 'es', 'nl']:
+    prompt(MESSAGES_INIT['en']['invalid_lang'])
+    lang = input()
+
+MESSAGES = MESSAGES_INIT[lang]
 
 while True:
     prompt(MESSAGES['first_number'])
