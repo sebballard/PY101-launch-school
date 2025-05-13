@@ -5,6 +5,25 @@ VALID_CHOICES = ["rock", "paper", "scissors", "spock", "lizard"]
 def prompt(message):
     print(f"==> {message}")
 
+def check_substring_choice(choice_str):
+    if len(choice_str) == 1 and (choice_str[0] == "s"):
+        return False
+    
+    for choice in VALID_CHOICES:
+        if choice.startswith(choice_str):
+            return True
+    
+    return False
+
+
+def give_full_choice(choice_str):
+    for choice in VALID_CHOICES:
+        if choice.startswith(choice_str):
+            return choice
+    
+
+
+
 def display_winner(player, computer):
     prompt(f"You chose {player}, computer chose {computer}")
 
@@ -25,15 +44,22 @@ def display_winner(player, computer):
     else:
         prompt("It's a tie!")
 
+
+
+
+
 answer = 'y'
 
 while answer == 'y':
     prompt(f'Choose one: {", ".join(VALID_CHOICES)}')
     choice = input()
 
-    while choice not in VALID_CHOICES:
+    while not check_substring_choice(choice):
         prompt("That's not a valid choice")
         choice = input()
+
+    choice = give_full_choice(choice)
+
 
     computer_choice = random.choice(VALID_CHOICES)
 
